@@ -13,5 +13,5 @@ Security and Compliance is a shared responsibility between AWS and the customer.
   - It depends on the AWS Cloud services the customer selects from the AWS offering.
 
 <p align="center">
-  <img src="your_relative_path_here" width="350" title="hover text">
+  <img src="https://github.com/robnob/AWS_Fundamentals-Addressing_Security_Risk/blob/main/Shared_Responsibility_Model.JPG" width="700" title="Shared_Responsibility_Model">
  </p>

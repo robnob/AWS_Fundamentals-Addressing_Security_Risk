@@ -11,3 +11,7 @@ Security and Compliance is a shared responsibility between AWS and the customer.
   - Other associated application software.
   - Configuration of the AWS provided security group firewall.
   - It depends on the AWS Cloud services the customer selects from the AWS offering.
+
+<p align="center">
+  <img src="your_relative_path_here" width="350" title="hover text">
+ </p>

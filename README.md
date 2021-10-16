@@ -173,3 +173,5 @@ Simple AD comes into two sizes:
 
 * small < 500 users
 * large < 5000 users
+
+Active Directory connector: re-use an existing on-premises Microsoft AD without caching information in the cloud

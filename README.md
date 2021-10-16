@@ -159,3 +159,8 @@ And this is the policy to apply for denying the tester group to assume the Updat
       - Inline: it is embbedded into an user, a group or a role.
 3.  AWS Single Sign-On (SSO)
 4.  Amazon Cloud Directory
+
+## Directory Services ##
+
+A best practice is to logically separate your infrastructure users and end-users. 
+Amazon Cognito provides an identity store called Cognito User Pools. This would store all your users so that registration, authentication and even password resets are handled by the user pool.

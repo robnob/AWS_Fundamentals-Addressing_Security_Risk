@@ -66,3 +66,9 @@ Best Practices:
 5. And for organizational units, assign policies to organizational units rather than to accounts. 
 6. Test new and modified policies on a single account before scaling up to OUs.
 7. Use the APIs and AWS CloudFormation templates to ensure that every newly graded account is configiured to your liking, this template can create IAM user roles and policies.
+
+## Delegate access across AWS accounts using IAM roles ##
+
+<p align="center">
+  <img src="https://github.com/robnob/AWS_Fundamentals-Addressing_Security_Risk/blob/main/Delegate_access_across_AWS_accounts_using_IAM_roles.JPG" width="700" title="Delegate_access_across_AWS_accounts_using_IAM_roles">
+ </p>

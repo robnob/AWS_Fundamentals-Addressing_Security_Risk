@@ -56,6 +56,13 @@ It is possible to:
 4.  Set up single payment method for all AWS accounts with consolidated billing
 5.  Share resources across acounts
 
-How does AWS Organizations work? First, you will choose an AWS account as a master account. Now, you create an organization in this master account. Note that when you use Organizations to create a new account, an IAM role will be created so that the master account can switch roles to access your member account. Then, you can either create an organization unit called OU, or accounts, called member accounts, under organization.
+How does AWS Organizations work? First, you will choose an AWS account as a master account. Now, you create an organization in this master account. Note that when you use Organizations to create a new account, an IAM role will be created so that the master account can switch roles to access your member account. Then, you can either create an organization unit called OU (Organizational Units), or accounts, called member accounts, under organization. Then, you can create service control policies to OU or to the member accounts. 
 
-
+Best Practices:
+1. Plan ahead for the structure of your organization. 
+2. We recommend that you keep the master account free of any operational AWS resources. 
+3. Use AWS CloudTrail in the master account to centrally track all AWS usage in the member accounts.
+4. Apply least privilege practice.
+5. And for organizational units, assign policies to organizational units rather than to accounts. 
+6. Test new and modified policies on a single account before scaling up to OUs.
+7. Use the APIs and AWS CloudFormation templates to ensure that every newly graded account is configiured to your liking, this template can create IAM user roles and policies.

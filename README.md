@@ -140,11 +140,20 @@ And this is the policy to apply for denying the tester group to assume the Updat
   
 ## Identity and Access Services ###
 
-3 Cases:
+3 User Cases (UK's) for authentication and authorization:
 
 1.  SSO :  Use the corporate identity to access AWS (The corporate AD is federated using Amazon Cognito)
 2.  Roles : Grant access to resources without hard coding credentials, nor password, nor API key.
 3.  Application access
 
+5 Services related to theses UK's:
 
-5.  
+1.  AWS Organisations
+2.  IAM Manage:
+    * users and their access
+    * roles and their permissions
+    * federated users and their permissions
+    * policies:
+      - AWS managed
+      - Customer managed
+3.  vwxcv

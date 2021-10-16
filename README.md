@@ -146,7 +146,7 @@ And this is the policy to apply for denying the tester group to assume the Updat
 2.  Roles : Grant access to resources without hard coding credentials, nor password, nor API key.
 3.  Application access
 
-5 Services related to theses UK's:
+4 Services related to theses UK's:
 
 1.  AWS Organisations
 2.  IAM Manage:
@@ -156,4 +156,6 @@ And this is the policy to apply for denying the tester group to assume the Updat
     * policies:
       - AWS managed
       - Customer managed
-3.  vwxcv
+      - Inline: it is embbedded into an user, a group or a role.
+3.  AWS Single Sign-On (SSO)
+4.  Amazon Cloud Directory

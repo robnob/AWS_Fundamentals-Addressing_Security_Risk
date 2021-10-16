@@ -15,6 +15,10 @@ Security and Compliance is a shared responsibility between AWS and the customer.
 <p align="center">
   <img src="https://github.com/robnob/AWS_Fundamentals-Addressing_Security_Risk/blob/main/Shared_Responsibility_Model.JPG" width="700" title="Shared_Responsibility_Model">
  </p>
+
+## Authentication Vs. Authorization ##
+ 
+Authentication is the process of verifying a user’s identity. Most commonly, users authenticate with a username (which identifies the user) and a password (which confirms the user is who he claims). Authorization, in contrast, is the process of granting users access to specific resources after they have been authenticated. For example, users might be placed into one or more groups based on their job title, and the application then determines which features are available to them based on their group membership.
  
  ## Best Practices ##
  *  Using IAM to crete other user different from root

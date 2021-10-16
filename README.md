@@ -15,3 +15,12 @@ Security and Compliance is a shared responsibility between AWS and the customer.
 <p align="center">
   <img src="https://github.com/robnob/AWS_Fundamentals-Addressing_Security_Risk/blob/main/Shared_Responsibility_Model.JPG" width="700" title="Shared_Responsibility_Model">
  </p>
+ 
+ ## Best Practices ##
+ *  Using IAM to crete other user different from root
+ *  Principle of least privileges
+ *  Principle of minimum needed access policies (Json)
+ *  Use of MFA
+ *  Strong passwords
+ *  Use of roles and groups to assign permissions
+ *  Monitoring using Amazon CloudWatch and AWS CloudTrail

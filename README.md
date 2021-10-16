@@ -19,7 +19,12 @@ Security and Compliance is a shared responsibility between AWS and the customer.
 ## Authentication Vs. Authorization ##
  
 Authentication is the process of verifying a user’s identity. Most commonly, users authenticate with a username (which identifies the user) and a password (which confirms the user is who he claims). Authorization, in contrast, is the process of granting users access to specific resources after they have been authenticated. For example, users might be placed into one or more groups based on their job title, and the application then determines which features are available to them based on their group membership.
- 
+
+
+## Identity Providers ##
+
+An Identity Provider is a service that manages authentication, providing a user login and the ability to verify a user’s identity. AWS Cognito has its own Identity Provider (using User Pools, which are explained below), but it can also integrate with well-established third-party Identity Providers like Facebook and Google. Additionally, Cognito can integrate with any Identity Provider that implements the SAML or OAuth2 protocols. The process of integrating with a third-party for authentication is called Federation.
+
  ## Best Practices ##
  *  Using IAM to crete other user different from root
  *  Principle of least privileges
@@ -172,6 +177,16 @@ Amazon Cognito provides an identity store called Cognito User Pools. This would 
 <p align="center">
   <img src="https://github.com/robnob/AWS_Fundamentals-Addressing_Security_Risk/blob/main/Cognito.JPG" width="700" title="Cognito">
  </p>
+ 
+### User Pools vs. Identity Pools — Understanding the Difference ###
+
+As we mentioned earlier, AWS Cognito is comprised of two separate, but related, services: User Pools and Identity Pools (also called Federated Identities). User Pools provide a user directory for your application, including all the bells and whistles that come with user management, like sign-up, sign-in, group management, etc. User Pools also provide your app with information like the user’s ID and group membership, so that your code can handle authorization. Identity Pools, in contrast, are used to assign IAM roles to users who authenticate through a separate Identity Provider. Because these users are assigned an IAM role, they each have their own set of IAM permissions, allowing them to access AWS resources directly.
+
+Because Identity Pools map a user from an Identity Provider to an IAM role, they essentially allow you to delegate authorization for AWS resources to AWS itself. This is the critical distinction between User Pools and Identity Pools. User Pools (by themselves) don’t deal with permissions at the IAM-level. Rather, they provide information like group membership and the user’s ID to your app, so you can deal with authorization yourself. Identity Pools, in contrast, grant users’ permissions at the IAM level. This means that Identity Pools allow for a much more granular set of permissions, with respect to AWS services.
+
+Let’s use an example to illustrate the distinction. Say you’re developing a serverless app using Cognito and Lambda. If you used User Pools to manage authentication, then you could configure API Gateway to pass through the user’s ID and group membership to your application. This would allow your code to determine if the user has sufficient permissions to access the requested functionality. However, the IAM permissions used to access the underlying AWS resources, like DynamoDB, would come from the Lambda execution role. All users who access your app would be operating under the same IAM role, and it would be up to you to make sure the right users get access to the right resources.
+
+However, if your application was using Identity Pools, then AWS would assign the user to an IAM role, and you could flow the permissions associated with that role through the application. This would mean, for example, that the user could access DynamoDB with her own IAM permissions, rather than the application-wide permissions that come from the Lambda execution role.
 
 Simple AD comes into two sizes:
 

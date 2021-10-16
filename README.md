@@ -168,3 +168,8 @@ Amazon Cognito provides an identity store called Cognito User Pools. This would 
 <p align="center">
   <img src="https://github.com/robnob/AWS_Fundamentals-Addressing_Security_Risk/blob/main/Cognito.JPG" width="700" title="Cognito">
  </p>
+
+Simple AD comes into two sizes:
+
+* small < 500 users
+* large < 5000 users

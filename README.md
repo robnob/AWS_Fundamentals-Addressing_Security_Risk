@@ -113,3 +113,27 @@ Policy to use:
   ]
 }
 </p>
+
+Policy to apply to the Developer group to access the UpdateApp role previously created:
+<p>
+  {
+  "Version": "2012-10-17",
+  "Statement": {
+    "Effect": "Allow",
+    "Action": "sts:AssumeRole",
+    "Resource": "arn:aws:iam::PRODUCTION-ACCOUNT-ID:role/UpdateApp"
+  }
+}
+</p>
+
+And this is the policy to apply for denying the tester group to assume the UpdateApp role:
+<p>
+  {
+  "Version": "2012-10-17",
+  "Statement": {
+    "Effect": "Deny",
+    "Action": "sts:AssumeRole",
+    "Resource": "arn:aws:iam::PRODUCTION-ACCOUNT-ID:role/UpdateApp"
+  }
+}
+  </p>

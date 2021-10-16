@@ -44,6 +44,18 @@ Security and Compliance is a shared responsibility between AWS and the customer.
 8.  Select the first option and the group created in the previos step. Next: Tags
 9.  In the Key type down Department and in the Value, IT. Next : Review
 10.  Click on Create user
-11.  Download and save the csv (it is not going to be available later) or send an email
+11.  Download and save the csv (it is not going to be available later) or send an email. Hit the CLose button.
 12.  To check the addition of this user to the group: go back to the group menu and see the users under the previously selected group
+
+## AWS Organisations ##
+
+It is possible to:
+1.  Automate account creation and management
+2.  Create groups of accounts to reflect business needs
+3.  Govern Access to AWS services resources region by policies
+4.  Set up single payment method for all AWS accounts with consolidated billing
+5.  Share resources across acounts
+
+How does AWS Organizations work? First, you will choose an AWS account as a master account. Now, you create an organization in this master account. Note that when you use Organizations to create a new account, an IAM role will be created so that the master account can switch roles to access your member account. Then, you can either create an organization unit called OU, or accounts, called member accounts, under organization.
+
 

@@ -137,3 +137,14 @@ And this is the policy to apply for denying the tester group to assume the Updat
   }
 }
   </p>
+  
+## Identity and Access Services ###
+
+3 Cases:
+
+1.  SSO :  Use the corporate identity to access AWS (The corporate AD is federated using Amazon Cognito)
+2.  Roles : Grant access to resources without hard coding credentials, nor password, nor API key.
+3.  Application access
+
+
+5.  

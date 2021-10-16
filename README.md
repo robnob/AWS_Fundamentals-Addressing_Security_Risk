@@ -164,3 +164,7 @@ And this is the policy to apply for denying the tester group to assume the Updat
 
 A best practice is to logically separate your infrastructure users and end-users. 
 Amazon Cognito provides an identity store called Cognito User Pools. This would store all your users so that registration, authentication and even password resets are handled by the user pool.
+
+<p align="center">
+  <img src="https://github.com/robnob/AWS_Fundamentals-Addressing_Security_Risk/blob/main/Cognito.JPG" width="700" title="Cognito">
+ </p>

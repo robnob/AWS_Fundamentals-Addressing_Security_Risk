@@ -267,5 +267,16 @@ It consists of 3 parts:
 
 It works by running an assessment based on your specific configuration choices and then outputting a list of findings for potential security issues. The resulting findings are displayed in the Amazon Inspector console, and they are presented with a detailed description of the security issue and a recommendation on how to fix it.
 
+<b> Trusted Advisor </b>
 
-  
+It assists you in provisioning your AWS resources using best practices, it then produces a report under 5 different categories:
+1.  Cost optimization
+2.  Performance
+3.  Security
+4.  Fault Tolerance
+5.  Service Limits
+
+Traffic light-based recommendations:
+1.  Green: no actions recommended
+2.  Orange: investigation needed
+3.  Red: action recommended

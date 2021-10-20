@@ -214,3 +214,5 @@ Different ways to improve the security of the VPC:
 <p align="center">
   <img src="https://github.com/robnob/AWS_Fundamentals-Addressing_Security_Risk/blob/main/Private_Link.JPG" width="700" title="Private_Link">
  </p>
+ 
+Each subnet in your VPC must be associated with a <b> route table </b>; the table controls the routing for the subnet. A subnet can only be associated with one route table at a time, but you can associate multiple subnets with the same route table.

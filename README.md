@@ -315,5 +315,17 @@ It
 
 Your log files from multiple sources
 
+## Amazon Guard Duty ##
+It is a threat-detection service that continuously monitors for malicious or unauthorized behavior to help you protect your AWS accounts and resources. This service uses machine learning, anomaly detection, and integrated threat intelligence to identify and prioritize potential threats. It provides 3 severity levels: low, medium and high. It uses:
+
+* HTTPS APIs
+* CLI tools
+* Amazon CloudWatch Events
+
+To support automated security responses to security findings.
+
+## Security Hub ##
  
+A single place that aggregates, organise and prioritise your security alerts or findings from multiple AWS services. The findings are sumarrize in a dashboard with actionable graphs and tables.
+
  

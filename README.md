@@ -208,8 +208,12 @@ Active Directory connector: re-use an existing on-premises Microsoft AD without 
 Different ways to improve the security of the VPC:
 
 1.  Using NACL's
-2.  Using Security Groups which act as firewalls for Amazon EC2
-3.  Between VPC's: Private Links
+3.  Using Security Groups which act as firewalls for Amazon EC2
+4.  Between VPC's: Private Links
+
+Two types of ednpoints:
+* Interface Endpoints: provide private connectivity to services powered by PrivateLink (AWS services, your own services or SaaS solutions)
+* Gateway Endpoints: Only for AWS Services, inlcuding DynamoDB and S3, they will add an entry to your route table you selected.
 
 <p align="center">
   <img src="https://github.com/robnob/AWS_Fundamentals-Addressing_Security_Risk/blob/main/Private_Link.JPG" width="700" title="Private_Link">

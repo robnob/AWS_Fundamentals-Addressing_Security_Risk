@@ -280,3 +280,7 @@ Traffic light-based recommendations:
 1.  Green: no actions recommended
 2.  Orange: investigation needed
 3.  Red: action recommended
+
+<p align="center">
+  <img src="https://github.com/robnob/AWS_Fundamentals-Addressing_Security_Risk/blob/main/Trusted_Advisor.JPG" width="700" title="Trusted_Advisor">
+ </p>

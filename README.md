@@ -1,5 +1,10 @@
 # AWS_Fundamentals-Addressing_Security_Risk
 2nd course of the Coursera AWS Fundamentals Specialization
+
+## Acronyms ##
+
+* VPC = Virtual Private Cloud
+* NACL = Network Access Control Lists
 ## Shared Responsibilities ##
 Security and Compliance is a shared responsibility between AWS and the customer. These are the responsibilities of each one:
 * AWS (Security on the Cloud):

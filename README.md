@@ -40,7 +40,7 @@ An Identity Provider is a service that manages authentication, providing a user 
  *  Use of MFA
  *  Strong passwords
  *  Use of roles and groups to assign permissions
- *  Monitoring using Amazon CloudWatch and AWS CloudTrail
+ *  Monitoring using Amazon CloudWatch and AWS CloudTrail (who is doing what in your AWS infrastructure)
 
 ##  Create an IAM group for Admin users ##
 1.  From the AWS Management Console open the IAM service
@@ -244,3 +244,28 @@ The implementation of detective controls by processing logs, events, and monitor
 * Auditing, 
 * Automatic analysis and 
 * Alarming. 
+
+<b> AWS CloudTrail </b> lets you see who is doing what in the latest 90 days in your AWS infrastructure, and it is enabled by default. It is possible to direct events to:
+1.  Amazon S3,
+2.  Amazon CloudWatch Event Logs and 
+3.  Events
+
+<b> AWS Config </b> which is used for configuration management. 
+1.  Record AWS configuration
+2.  Store the history of those configurations
+3.  Changes to that configuration
+
+<b> AWS Inspector </b>
+It runs an automated security assessment, helping then to:
+* Improve security
+* Improve compliance of your AWS deployed applications.
+
+It consists of 3 parts:
+1.  A network configuration reachability piece
+2.  An Amazon Agent
+3.  A security assessment service
+
+It works by running an assessment based on your specific configuration choices and then outputting a list of findings for potential security issues. The resulting findings are displayed in the Amazon Inspector console, and they are presented with a detailed description of the security issue and a recommendation on how to fix it.
+
+
+  

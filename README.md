@@ -240,3 +240,7 @@ You cannot route traffic to a NAT gateway through a VPC peering connection, a VP
 ## Detective Controls ##
 Detective controls is a term that describes a continued improvement in monitoring of events and processing of blocks that allow for auditing, automated analysis, and alarming.
 
+The implementation of detective controls by processing logs, events, and monitoring allow for:
+* Auditing, 
+* Automatic analysis and 
+* Alarming. 

@@ -220,3 +220,18 @@ Two types of ednpoints:
  </p>
  
 Each subnet in your VPC must be associated with a <b> route table </b>; the table controls the routing for the subnet. A subnet can only be associated with one route table at a time, but you can associate multiple subnets with the same route table.
+
+## VPC Flow Logs ##
+
+VPC Flow Logs is a feature that enables you to capture information about the IP traffic going to and from network interfaces in your VPC. Flow log data can be published to Amazon CloudWatch Logs or Amazon S3. After you've created a flow log, you can retrieve and view its data in the chosen destination.
+
+Flow logs can help you with a number of tasks, such as:
+
+* Diagnosing overly restrictive security group rules
+* Monitoring the traffic that is reaching your instance
+* Determining the direction of the traffic to and from the network interfaces
+
+Flow log data is collected outside of the path of your network traffic, and therefore does not affect network throughput or latency. You can create or delete flow logs without any risk of impact to network performance. 
+
+You cannot enable flow logs for network interfaces that are in the EC2-Classic platform. This includes EC2-Classic instances that have been linked to a VPC through ClassicLink.
+

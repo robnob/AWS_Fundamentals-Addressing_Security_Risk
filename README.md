@@ -5,7 +5,7 @@
 
 * VPC = Virtual Private Cloud
 * NACL = Network Access Control Lists
-* Stateless = If it is allow in, then it is explicitly allowed out
+* Stateless = If it is allowed in traffic, then it needs to explicitly allowe or deny traffic out
 * 
 ## Shared Responsibilities ##
 Security and Compliance is a shared responsibility between AWS and the customer. These are the responsibilities of each one:

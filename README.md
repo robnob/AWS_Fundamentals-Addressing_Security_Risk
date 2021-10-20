@@ -201,3 +201,11 @@ Simple AD comes into two sizes:
 * large < 5000 users
 
 Active Directory connector: re-use an existing on-premises Microsoft AD without caching information in the cloud
+
+## NETWORK ISOLATION ##
+
+Different ways to improve the security of the VPC:
+
+1.  Using NACL's
+2.  Using Security Groups which act as firewalls for Amazon EC2
+3.  

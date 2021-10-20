@@ -250,15 +250,27 @@ The implementation of detective controls by processing logs, events, and monitor
 2.  Amazon CloudWatch Event Logs and 
 3.  Events
 
+<p align="center">
+  <img src="https://github.com/robnob/AWS_Fundamentals-Addressing_Security_Risk/blob/main/CloudTrail.JPG" width="700" title="CloudTrail">
+ </p>
+
 <b> AWS Config </b> which is used for configuration management. 
 1.  Record AWS configuration
 2.  Store the history of those configurations
 3.  Changes to that configuration
 
+<p align="center">
+  <img src="https://github.com/robnob/AWS_Fundamentals-Addressing_Security_Risk/blob/main/Config.JPG" width="700" title="Config">
+ </p>
+
 <b> AWS Inspector </b>
 It runs an automated security assessment, helping then to:
 * Improve security
 * Improve compliance of your AWS deployed applications.
+
+<p align="center">
+  <img src="https://github.com/robnob/AWS_Fundamentals-Addressing_Security_Risk/blob/main/Inspector.JPG" width="1200" title="Inspector">
+ </p>
 
 It consists of 3 parts:
 1.  A network configuration reachability piece

@@ -245,7 +245,8 @@ The implementation of detective controls by processing logs, events, and monitor
 * Automatic analysis and 
 * Alarming. 
 
-<b> AWS CloudTrail </b> lets you see who is doing what in the latest 90 days in your AWS infrastructure, and it is enabled by default. It is possible to direct events to:
+<b> AWS CloudTrail </b> 
+It is a service that enables governance, compliance, operational auditing, and risk auditing of your AWS account. It lets you see who is doing what in the latest 90 days in your AWS infrastructure, and it is enabled by default. It is possible to direct events to:
 1.  Amazon S3,
 2.  Amazon CloudWatch Event Logs and 
 3.  Events
@@ -254,7 +255,8 @@ The implementation of detective controls by processing logs, events, and monitor
   <img src="https://github.com/robnob/AWS_Fundamentals-Addressing_Security_Risk/blob/main/CloudTrail.JPG" width="700" title="CloudTrail">
  </p>
 
-<b> AWS Config </b> which is used for configuration management. 
+<b> AWS Config </b> 
+It is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources.
 1.  Record AWS configuration
 2.  Store the history of those configurations
 3.  Changes to that configuration
@@ -296,3 +298,22 @@ Traffic light-based recommendations:
 <p align="center">
   <img src="https://github.com/robnob/AWS_Fundamentals-Addressing_Security_Risk/blob/main/Trusted_Advisor.JPG" width="700" title="Trusted_Advisor">
  </p>
+ 
+ ## Monitoring ##
+ It is to collect, extract and display data and statistics and related to your infrastructure.
+ 
+ <b> CloudWatch (CW)/ </b>
+ It is basicaaly a metrics repository, once a threshold (set by you) is crossed an alarm is generated and it performs 1 or more actions: SNS or Auto-scaling policy
+ 
+ <b> CloudWatch Logs + Insights </b>
+It
+*  Monitor
+*  Store
+*  Access
+*  Search
+*  Analyze
+
+Your log files from multiple sources
+
+ 
+ 
